@@ -8,7 +8,7 @@ A continuación, se muestra el resultado obtenido en la pestaña Performance tra
 ![](/Actividad2/resources2/screenshots2/ResultadoEstandarDT.png)
 
 
-Posteriormente, se procede a documentar cada escenario del experiment de integración.
+Posteriormente, se procede a documentar cada escenario del experimento de integración.
 En primer lugar, el script 1 insertado en el head, visualizándose primero el código en el index.html...
 
 ![](/Actividad2/resources2/screenshots2/IndexHTMLHeadScript.png)
