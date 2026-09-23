@@ -47,25 +47,23 @@ En este momento, una vez que se ha interpretado el código y se han revisado las
 
 Se abre la pestaña Console y se ejecuta la línea de código 'const a = "eoo"; console.log(a);'. El resultado se muestra en la siguiente captura:  
 
-
 ![](/resources/screenshots/ViewConsoleLog.png)
 
 Como se puede observar, sólo imprime por consola el valor de una variable (constante) declarada previamente.
 
 
-En cambio, después se prueba un código maligno que intente leer un archivo del disco duro.
+En cambio, después se prueba un código "maligno" que intente leer un archivo del disco duro (un simple FileReader, por ejemplo), aparece el siguiente error:
 
+![](/resources/screenshots/ViewConsoleError.png)
 
-
-
+Salta error al leer el archivo porque al intentar forzar que se lea un archivo de una ruta determinada directamente, sin pedir input al usuario para seleccionar o arrastar el archivo a leer, 
 
 
 · Análisis de Bloqueo
 
+Si se vuelve a la pestaña Network y se revisan los scripts de JavaScript, en este caso se observa que no hay scripts que lleguen a pesar 1 MB (el mayor es de 14 kB). 
 
-
-
-
-
+![](/resources/screenshots/ViewConsoleScript.png)
+En caso de que el script llegase a ser más pesado, si el script se ejecutase de manera síncrona, 
 
 
