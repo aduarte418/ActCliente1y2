@@ -1,7 +1,7 @@
 
-// Bucle for vacío para simular script pesado
-for(let i = 0; i < 50000000; i++){
-
+// Bucle for para simular script pesado
+for(let i = 0; i < 1000000; i++){
+    console.log('Número: ' + i);
 }
 
 // Línea de código para cambiar texto
