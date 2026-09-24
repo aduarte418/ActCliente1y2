@@ -1,6 +1,6 @@
 
 // Bucle for para simular script pesado
-for(let i = 0; i < 1000000; i++){
+for(let i = 0; i < 500000; i++){
     console.log('Número: ' + i);
 }
 

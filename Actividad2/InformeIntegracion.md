@@ -17,9 +17,9 @@ En primer lugar, el script 1 insertado en el head, visualizándose primero el c�
 
 ![](/Actividad2/resources2/screenshots2/DevToolsHeadScript1.png)
 
-Tarda 0.06 s en pintar el título (en este caso, el mayor elemento visible que se renderiza). Eso sí, se destaca que en la consola salta el error de que no puede preparar las propiedades de un elemento que aún no existe, porque se ha ejecutado el script en el head, antes de que se hubiera renderizado el texto, situado en el body.
+Tarda 0.06 s en pintar el título (en este caso, el mayor elemento visible que se renderiza). Eso sí, se destaca que en la consola salta el error de que no puede preparar las propiedades de un elemento que aún no existe (ya que no ha cambiado el elemento por acción del script), porque se ha ejecutado el script en el head, antes de se hubiera renderizado el texto, situado en el body.
 
-Se procede a probar el mismo script pero situándolo en el body, justo antes de cerrarse éste y justo después de donde se sitúa el elemento h1 con el título.
+Ahora, se procede a probar el mismo script pero situándolo en el body, justo antes de cerrarse éste y justo después de donde se sitúa el elemento h1 con el título.
 
 Muestra de código:
 
@@ -36,7 +36,7 @@ Se continúan realizando pruebas, en este caso integrando el script async en el 
 
 ![](/Actividad2/resources2/screenshots2/IndexHTMLHeadScriptAsync.png)
 
-En este caso se prueba con el script 3 y se observa que, además del tiempo de 0.07s para pintar el título, ahora el script se ejecuta pese , ya que mientras éste se descargaba el HTML continuaba pintándose, de modo que una vez descargado el script la página ya estaba formada y éste podía actuar.
+En este caso se prueba con el script 3 y se observa que, además del tiempo de 0.07s para pintar el título, ahora el script se ejecuta pese a estar colocado, ya que mientras éste se descarga el HTML continúa pintándose, de modo que una vez descargado el script la página ya estaba formada y éste puede actuar y realizar su correspondiente modificación al título.
 
 ![](/Actividad2/resources2/screenshots2/DevToolsAsyncScript3.png)
 
