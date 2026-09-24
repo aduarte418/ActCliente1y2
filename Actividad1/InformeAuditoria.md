@@ -35,17 +35,17 @@ De acuerdo al HTML examinado en la pestaña Doc (Response), Youtube utiliza CSR 
 
 Para analizar el motor del navegador, se ha realizado una pequeña grabación de rendimiento de unos 5 segundos, quedando en la pestaña Performance un registro a modo de línea del tiempo de las fases ejecutadas.
 
-Se puede apreciar que, en primer lugar, durante el primer segundo, justo después de realizar la petición para mostrar la página web, se ejecutan las fases de Parsing HTML y Evaluate Script (franjas azul y amarilla respectivamente, como se puede observar). 
+Se puede apreciar que, en primer lugar, durante el primer segundo, justo después de realizar la petición para mostrar la página web, se ejecutan las fases de Parsing HTML y Evaluate Script (franjas azul y amarilla respectivamente). 
 
 ![](/Actividad1/resources1/screenshots1/ViewPerformanceParsingEvaluate.png)
 
 En este momento, el motor del navegador está leyendo el código y convirtiéndolo a la estructura AST (Árbol de Sintaxis Abstracta) durante la fase de Parsing. Después es interpretado y transformado en un bytecode que es evaluado en la fase Evaluate Script.
 
-Posteriormente, cuando han transcurrido unos dos segundos, y después de haber vuelto a ejecutar las fases de Parsing y Evaluate Script, tiene lugar, la fase de Compile Code (Compile Script, en amarillo y justo debajo de Evaluate Script)
+Posteriormente, cuando han transcurrido unos dos segundos, y después de haber vuelto a ejecutar las fases de Parsing y Evaluate Script, tiene lugar la fase de Compile Code (Compile Script, en amarillo y justo debajo de Evaluate Script)
 
 ![](/Actividad1/resources1/screenshots1/ViewPerformanceJIT.png)
 
-En este momento, una vez que se ha interpretado el código y se han revisado las partes más ejecutadas (hot code), el motor lo compila directamente a código máquina que se ejecuta en un instante (fase de Compilador Optimizador JIT).
+En este momento, una vez que se ha interpretado el código y se han revisado las partes más ejecutadas (hot code), el motor lo compila directamente a código máquina que se ejecuta instantáneamente (fase de Compilador Optimizador JIT).
 
 
 · Análisis del Sandbox a través de Console
