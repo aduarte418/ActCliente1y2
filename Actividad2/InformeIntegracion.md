@@ -29,14 +29,14 @@ Captura de DevTools:
 
 ![](/Actividad2/resources2/screenshots2/DevToolsBodyScript1.png)
 
-Se puede observar que tarda 0.05 s en pintar el título, pero más importante, que esta vez el texto ha cambiado por el definido en el script1 ("Cambiado por X"), ya que el script se ejecuta una vez que se ha creado el elemento que modifica (al final del body). Además, no se detecta error en consola. 
+Se puede observar que tarda 0.04 s en pintar el título, pero más importante, que esta vez el texto ha cambiado por el definido en el script1 ("Cambiado por X"), ya que el script se ejecuta una vez que se ha creado el elemento que modifica (al final del body). Además, no se detecta error en consola. 
 
 
 Se continúan realizando pruebas, en este caso integrando el script async en el head:
 
 ![](/Actividad2/resources2/screenshots2/IndexHTMLHeadScriptAsync.png)
 
-En este caso se prueba con el script 3 y se observa que, además del tiempo de 0.07s para pintar el título, ahora el script se ejecuta pese a estar colocado, ya que mientras éste se descarga el HTML continúa pintándose, de modo que una vez descargado el script la página ya estaba formada y éste puede actuar y realizar su correspondiente modificación al título.
+Se prueba con el script 3 y se observa que, además del tiempo de 0.06s para pintar el título, ahora el script se ejecuta pese a estar colocado en el head, ya que mientras éste se descarga el HTML continúa pintándose, de modo que una vez descargado el script la página ya está formada y éste puede actuar y realizar su correspondiente modificación al título.
 
 ![](/Actividad2/resources2/screenshots2/DevToolsAsyncScript3.png)
 
@@ -46,7 +46,7 @@ Después se prueba el script 2 defer en el head:
 ![](/Actividad2/resources2/screenshots2/IndexHTMLHeadScriptDefer.png)
 
 
-Los resultados muestran, además del tiempo de 0.06 s, que el script se descargue de forma paralela al procesamiento del HTML, sin pausar ni bloquear este proceso, ejecutándose el script una vez la página ha sido procesada y pintada.
+Los resultados muestran, además del tiempo de 0.05 s, que el script se descargue de forma paralela al procesamiento del HTML, sin pausar ni bloquear este proceso, ejecutándose el script una vez la página ha sido procesada y pintada.
 
 ![](/Actividad2/resources2/screenshots2/DevToolsDeferScript2.png)
 
