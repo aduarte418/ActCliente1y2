@@ -61,7 +61,7 @@ En cambio, después se prueba un código "maligno" que intente leer un archivo d
 
 ![](/Actividad1/resources1/screenshots1/ViewConsoleError.png)
 
-Salta error al leer el archivo porque al intentar forzar que se lea un archivo de una ruta determinada directamente, sin pedir input al usuario para seleccionar o arrastar el archivo a leer, el Sandbox del navegador actúa como el entorno protegido que evita que alguien (como un hacker) pueda introducir un código para forzar (hardcode) el acceso a los archivos del usuario y leerlos.
+Salta error de acceso bloqueado porque al intentar forzar que se lea un archivo del pc directamente, sin pedir input al usuario, el Sandbox del navegador actúa como el entorno protegido que evita que se pueda introducir un código para forzar el acceso a los archivos del usuario y leerlos. Especifica que no se puede cargar el recurso local al que se intenta acceder.
 
 
 · Análisis de Bloqueo
